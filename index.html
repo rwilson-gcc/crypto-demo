@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crypto Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Cryptography Playground</h1>
+    <p>Learn & test different cryptographic techniques in your browser.</p>
+  </header>
+
+  <section class="card">
+    <h2>Caesar Cipher (Classical Cryptography)</h2>
+    <textarea id="caesar-input" placeholder="Enter text..."></textarea>
+    <label>Shift:</label>
+    <input type="number" id="shiftk="caesarEncrypt()">Encrypt</button>
+    <button onclick="caesarDecrypt()">Decrypt</button>
+    <pre id="caesar-output"></pre>
+  </section>
+
+  <section class="card">
+    <h2>SHA‑256 Hash (One‑Way Hashing)</h2>
+    <input type="text" id="hash-input" placeholder="Enter text...">
+    <button onclick="generateHash()">Generate Hash</button>
+    <pre id="hash-output"></pre>
+  </section>
+
+  <section class="card">
+    <h2>AES‑256 Encryption (Modern Symmetric Crypto)</h2>
+    <textarea id="aes-input" placeholder="Enter text..."></textarea>
+    <input type="text" id="aes-key" placeholder="Enter key (min 8 chars)">
+    <button onclick="aesEncrypt()">Encrypt</button>
+    <button onclick="aesDecrypt()">Decrypt</button>
+    <pre id="aes-output"></pre>
+  </section>
+
+  <footer>
+    <p>Built for GitHub Pages • Pure HTML, CSS & JS</p>
+  </footer>
+
+  https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js
+  script.js</script>
+</body>
+</html>
