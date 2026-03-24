@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptography Playground</title>
-
-    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -31,6 +29,25 @@
     <button onclick="caesarDecrypt()">Decrypt</button>
 
     <pre id="caesar-output"></pre>
+
+    <!-- ✅ TEACHING SECTION -->
+    <div class="explain">
+        <h3>How the Caesar Cipher Works</h3>
+        <p>
+            The Caesar Cipher is one of the oldest known encryption techniques,
+            used by Julius Caesar to protect military messages. It works by
+            shifting each letter in the alphabet forward or backward by a
+            fixed number of positions.
+        </p>
+        <ul>
+            <li>✅ A simple substitution cipher</li>
+            <li>✅ Symmetric (same key for encryption + decryption)</li>
+            <li>✅ Easy to break using brute force (only 25 shifts!)</li>
+        </ul>
+
+        <button onclick="animateCaesar()">Show Caesar Shift Animation</button>
+        <div id="caesar-animation" class="animation-box"></div>
+    </div>
 </section>
 
 <!-- =======================================================
@@ -43,6 +60,24 @@
     <button onclick="generateHash()">Generate Hash</button>
 
     <pre id="hash-output"></pre>
+
+    <!-- ✅ TEACHING SECTION -->
+    <div class="explain">
+        <h3>Understanding SHA‑256</h3>
+        <p>
+            SHA‑256 is a cryptographic hash function that transforms input into
+            a 256‑bit value. It is <strong>one‑way</strong>, meaning the original
+            message cannot be recovered from the hash.
+        </p>
+        <ul>
+            <li>✅ Deterministic (same input → same output)</li>
+            <li>✅ Huge output space (2<sup>256</sup>)</li>
+            <li>✅ Used in blockchain (Bitcoin), digital signatures, password storage</li>
+        </ul>
+
+        <button onclick="animateSHA()">Show Avalanche Effect</button>
+        <div id="sha-animation" class="animation-box"></div>
+    </div>
 </section>
 
 <!-- =======================================================
@@ -58,16 +93,31 @@
     <button onclick="aesDecrypt()">Decrypt</button>
 
     <pre id="aes-output"></pre>
+
+    <!-- ✅ TEACHING SECTION -->
+    <div class="explain">
+        <h3>How AES‑256 Works</h3>
+        <p>
+            AES is the global standard for modern encryption and secures everything
+            from HTTPS connections to Wi‑Fi and hard drives. AES‑256 uses a 
+            256‑bit key and 14 rounds of transformation.
+        </p>
+        <ul>
+            <li>✅ Symmetric block cipher</li>
+            <li>✅ Extremely secure (2<sup>256</sup> possible keys)</li>
+            <li>✅ Resistant to modern cryptanalysis</li>
+        </ul>
+
+        <button onclick="animateAES()">Show AES Round Visualisation</button>
+        <div id="aes-animation" class="animation-box"></div>
+    </div>
 </section>
 
 <footer>
-    <p>Built for GitHub Pages • Pure HTML, CSS & JavaScript</p>
-</footer>
-
-
+    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
-
 <script src="script.js"></script>
+
 
 </body>
 </html>
