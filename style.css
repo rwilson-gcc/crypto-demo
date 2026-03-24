@@ -1,3 +1,87 @@
+/* ===============================
+   Global Page Styles
+================================*/
+
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: #1f1f1f;
+    border-bottom: 2px solid #333;
+}
+
+h1 {
+    margin: 0;
+}
+
+.card {
+    background: #1e1e1e;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #2d2d2d;
+    border: 1px solid #444;
+    color: #eee;
+    border-radius: 4px;
+}
+
+button {
+    background: #0078ff;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+pre {
+    background: #000;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+/* ===============================
+   Teaching Section
+================================*/
+
+.explain {
+    margin-top: 20px;
+    padding: 15px;
+    background: #181818;
+    border-radius: 6px;
+    border-left: 3px solid #0078ff;
+}
+
+.explain ul li {
+    margin: 5px 0;
+}
+
+/* ===============================
+   Animation Styles
+================================*/
+
 .animation-box {
     background: #000;
     padding: 15px;
@@ -32,4 +116,11 @@
 .shifted-letter {
     color: #00d4ff;
     font-weight: bold;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 40px;
 }
