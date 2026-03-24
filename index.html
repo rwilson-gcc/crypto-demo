@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptography Playground</title>
 
-    <!-- CSS -->
+    
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,7 +13,7 @@
 
 <header>
     <h1>Cryptography Playground</h1>
-    <p>Learn, visualise, and interact with modern and classical cryptography.</p>
+    <p>Learn & test different cryptographic techniques in your browser.</p>
 </header>
 
 <!-- =======================================================
@@ -31,19 +31,6 @@
     <button onclick="caesarDecrypt()">Decrypt</button>
 
     <pre id="caesar-output"></pre>
-
-    <!-- Teaching + Animation -->
-    <div class="explain">
-        <h3>How the Caesar Cipher Works</h3>
-        <p>
-            This cipher shifts each letter forward or backward by a fixed amount. 
-            It’s one of the earliest known ciphers, used by Julius Caesar.
-        </p>
-
-        <button onclick="animateCaesar()">Show Animation</button>
-
-        <div id="caesar-animation" class="animation-box"></div>
-    </div>
 </section>
 
 <!-- =======================================================
@@ -56,19 +43,6 @@
     <button onclick="generateHash()">Generate Hash</button>
 
     <pre id="hash-output"></pre>
-
-    <!-- Teaching + Animation -->
-    <div class="explain">
-        <h3>Understanding SHA‑256</h3>
-        <p>
-            SHA‑256 is a modern cryptographic hash function. 
-            It is one-way, meaning the input cannot be recovered from the output.
-        </p>
-
-        <button onclick="animateSHA()">Show Animation</button>
-
-        <div id="sha-animation" class="animation-box"></div>
-    </div>
 </section>
 
 <!-- =======================================================
@@ -84,22 +58,16 @@
     <button onclick="aesDecrypt()">Decrypt</button>
 
     <pre id="aes-output"></pre>
-
-    <!-- Teaching + Animation -->
-    <div class="explain">
-        <h3>How AES‑256 Works</h3>
-        <p>
-            AES is the encryption standard used worldwide, from HTTPS traffic to 
-            encrypted storage. AES‑256 uses a 256‑bit key and 14 rounds of transformation.
-        </p>
-
-        <button onclick="animateAES()">Show Animation</button>
-
-        <div id="aes-animation" class="animation-box"></div>
-    </div>
 </section>
 
 <footer>
-    <p>Built for GitHub Pages • HTML • CSS • JavaScript</p>
+    <p>Built for GitHub Pages • Pure HTML, CSS & JavaScript</p>
 </footer>
 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
