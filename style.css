@@ -1,60 +1,36 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #121212;
-  color: #eee;
-  margin: 0;
-  padding: 0;
+.animation-box {
+    background: #000;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    color: #eee;
 }
 
-header {
-  text-align: center;
-  padding: 30px;
-  background: #1f1f1f;
-  border-bottom: 2px solid #333;
+.alphabet-row {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
 }
 
-.card {
-  background: #1e1e1e;
-  margin: 20px auto;
-  padding: 20px;
-  width: 80%;
-  max-width: 700px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px #000;
+.alphabet-row span {
+    padding: 4px 6px;
+    background: #222;
+    border-radius: 4px;
 }
 
-textarea, input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  background: #2d2d2d;
-  border: 1px solid #444;
-  color: #eee;
+.alphabet-row.shifted span {
+    background: #0078ff;
 }
 
-button {
-  background: #0078ff;
-  border: none;
-  padding: 10px 15px;
-  margin-right: 10px;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
+.shift-step {
+    margin-top: 8px;
+    padding: 6px;
+    background: #1b1b1b;
+    border-left: 4px solid #0078ff;
 }
 
-button:hover {
-  background: #005fcc;
+.shifted-letter {
+    color: #00d4ff;
+    font-weight: bold;
 }
-
-pre {
-  background: #000;
-  padding: 10px;
-  border-radius: 5px;
-  overflow-x: auto;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  opacity: 0.5;
-}
+``
