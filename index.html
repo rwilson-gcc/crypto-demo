@@ -5,51 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptography Playground</title>
 
-    <!-- ✅ Correct CSS link -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Cryptography Playground</h1>
-        <p>Learn & test different cryptographic techniques in your browser.</p>
-    </header>
+<header>
+    <h1>Cryptography Playground</h1>
+    <p>Learn, visualise, and interact with modern and classical cryptography.</p>
+</header>
 
-    <!-- ============================
-         CAESAR CIPHER SECTION
-         ============================ -->
-    <section class="card">
-        <h2>Caesar Cipher (Classical Cryptography)</h2>
+<!-- =======================================================
+     CAESAR CIPHER
+======================================================= -->
+<section class="card">
+    <h2>Caesar Cipher (Classical Cryptography)</h2>
 
-        <textarea id="caesar-input" placeholder="Enter text..."></textarea>
+    <textarea id="caesar-input" placeholder="Enter text..."></textarea>
 
-        <label>Shift:</label>
-        <input type="number" id="shift" value="3">
+    <label>Shift:</label>
+    <input type="number" id="shift" value="3">
 
-        <button onclick="caesarEncrypt()">Encrypt</button>
-        <button onclick="caesarDecrypt()">Decrypt</button>
+    <button onclick="caesarEncrypt()">Encrypt</button>
+    <button onclick="caesarDecrypt()">Decrypt</button>
 
-        <pre id="caesar-output"></pre>
-    </section>
+    <pre id="caesar-output"></pre>
 
+    <!-- Teaching + Animation -->
+    <div class="explain">
+        <h3>How the Caesar Cipher Works</h3>
+        <p>
+            This cipher shifts each letter forward or backward by a fixed amount. 
+            It’s one of the earliest known ciphers, used by Julius Caesar.
+        </p>
 
-    <!-- ============================
-         SHA‑256 HASHING SECTION
-         ============================ -->
-    <section class="card">
-        <h2>SHA‑256 Hash (One‑Way Hashing)</h2>
+        <button onclick="animateCaesar()">Show Animation</button>
 
-        <input type="text" id="hash-input" placeholder="Enter text...">
-        <button onclick="generateHash()">Generate Hash</button>
+        <div id="caesar-animation" class="animation-box"></div>
+    </div>
+</section>
 
-        <pre id="hash-output"></pre>
-    </section>
+<!-- =======================================================
+     SHA-256
+======================================================= -->
+<section class="card">
+    <h2>SHA‑256 Hash (One‑Way Hashing)</h2>
 
+    <input type="text" id="hash-input" placeholder="Enter text...">
+    <button onclick="generateHash()">Generate Hash</button>
 
-    <!-- ============================
-         AES‑256 ENCRYPTION
-         ============================ -->
-    <section class="card">
-        <h2>AES‑256 Encryption (Modern Symmetric Crypto)</h2>
+    <pre id="hash-output"></pre>
+
+    <!-- Teaching + Animation -->
+    <div class="explain">
+        <h3>Understanding SHA‑256</h3>
+        <p>
+            SHA‑256 is a modern cryptographic hash function. 
+            It is one-way, meaning the input cannot be recovered from the output.
+        </p>
+
+        <button onclick="animateSHA()">Show Animation</button>
+
+        <div id="sha-animation" class="animation-box"></div>
+    </div>
+</section>
+
+<!-- =======================================================
+     AES-256
+======================================================= -->
+<section class="card">
+    <h2>AES‑256 Encryption (Modern Symmetric Crypto)</h2>
+
+    <textarea id="aes-input" placeholder="Enter text..."></textarea>
+    <input type="text" id="aes-key" placeholder="Enter key (min 8 chars)">
+
+    <button onclick="aesEncrypt()">Encrypt</button>
+    <button onclick="aesDecrypt()">Decrypt</button>
+
+    <pre id="aes-output"></pre>
+
+    <!-- Teaching + Animation -->
+    <div class="explain">
+        <h3>How AES‑256 Works</h3>
+        <p>
+            AES is the encryption standard used worldwide, from HTTPS traffic to 
+            encrypted storage. AES‑256 uses a 256‑bit key and 14 rounds of transformation.
+        </p>
+
+        <button onclick="animateAES()">Show Animation</button>
+
+        <div id="aes-animation" class="animation-box"></div>
+    </div>
+</section>
+
+<footer>
+    <p>Built for GitHub Pages • HTML • CSS • JavaScript</p>
+</footer>
 
